@@ -1,24 +1,20 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import Landing from "./components/Landing/Landing";
+import Banner from "./components/Banner";
 
 function App() {
+  const [darkMode, setDarkMode] = useState(true);
+  const [banner, setBanner] = useState(true);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div
+      style={{
+        backgroundColor: darkMode ? "black" : "white",
+        color: darkMode ? "black" : "white",
+      }}
+      className='relative flex flex-col'
+    >
+      <Landing darkMode={darkMode} setDarkMode={setDarkMode} />
+      {banner && <Banner setBanner={setBanner} banner={banner} />}
     </div>
   );
 }
