@@ -13,10 +13,7 @@ const Banner: React.FC<MyComponentsProps> = ({ setBanner, banner }) => {
     setBanner(false);
   };
   return (
-    <div
-      className='absolute flex justify-between bg-[#86a184] gap-12 bottom-4 text-[15px] px-10 py-2 w-fit
-      h-fit  left-1/2 transform -translate-x-1/2 font-light'
-    >
+    <div className='absolute flex justify-between bg-[#86a184] gap-12 bottom-10 text-[15px] px-10 py-2 w-fit max-w-screen-sm h-fit  left-1/2 transform -translate-x-1/2 font-light'>
       <a href='/'>
         <FaLinkedin className='text-blue-600 text-[25px]' />
       </a>

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { Dispatch, SetStateAction, useEffect, useState } from "react";
 
 const catchyPhrases = [
   "Crafting Digital Experiences, One Line at a Time",
@@ -12,6 +12,7 @@ const catchyPhrases = [
   "Frontend Wizardry: Shaping the Digital Landscape",
   "Empowering Your Online Journey with Seamless Design",
 ];
+
 const Hero = () => {
   const [phraseIndex, setPhraseIndex] = useState(0);
 
@@ -29,8 +30,10 @@ const Hero = () => {
   return (
     <div className='h-full flex justify-center flex-grow w-full p-4'>
       <div className='flex flex-col m-auto w-[1000px] h-[400px]'>
-        <p className='text-[25px] font-platypi'>Akinro Destined</p>
-        <h1 className='text-[80px] font-arges uppercase font-extrabold tracking-wide'>
+        <p className='text-[22px] md:text-[25px] font-platypi'>
+          Akinro Destined
+        </p>
+        <h1 className='text-[60px] md:text-[80px] font-arges uppercase font-extrabold tracking-wide'>
           {catchyPhrases[phraseIndex]}
         </h1>
       </div>
