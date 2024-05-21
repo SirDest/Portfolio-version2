@@ -17,7 +17,7 @@ const Landing: React.FC<MyComponentsProps> = ({ darkMode, setDarkMode }) => {
         backgroundColor: darkMode ? "black" : "white",
         color: darkMode ? "white" : "black",
       }}
-      className='w-full h-screen relative flex flex-col'
+      className='w-full h-screen flex flex-col'
     >
       <Header setDarkMode={setDarkMode} darkMode={darkMode} banner={banner} />
       {banner && <Banner setBanner={setBanner} banner={banner} />}
