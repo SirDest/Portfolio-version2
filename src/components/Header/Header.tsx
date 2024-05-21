@@ -25,9 +25,16 @@ const Header: React.FC<MyComponentsProps> = ({
   const setMode = () => {
     setDarkMode((prev) => !prev);
   };
+
+  // #ECE6D5;
+  // #050C0F
   return (
     <div>
-      <nav className='flex flex-row justify-between items-center text-[13px] lg:text-[17px] h-fit w-full px-4 lg:py-6 py-4'>
+      <nav
+        className={`flex flex-row justify-between items-center text-[12px] lg:text-[14px] h-fit w-full px-4 lg:py-6 py-4 ${
+          darkMode ? "text-gray-200" : "text-gray-800"
+        }`}
+      >
         <li className={generateClassNames(headerIcon)}>About</li>
         <li className={generateClassNames(headerIcon)}>Skills</li>
         <li className={generateClassNames(headerIcon)}>My Resume</li>

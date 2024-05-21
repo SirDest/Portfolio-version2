@@ -12,16 +12,10 @@ const Landing: React.FC<MyComponentsProps> = ({ darkMode, setDarkMode }) => {
   const [banner, setBanner] = useState(true);
 
   return (
-    <div
-      style={{
-        backgroundColor: darkMode ? "black" : "white",
-        color: darkMode ? "white" : "black",
-      }}
-      className='w-full h-screen flex flex-col'
-    >
+    <div className='w-full min-h-[570px] h-screen flex flex-col'>
       <Header setDarkMode={setDarkMode} darkMode={darkMode} banner={banner} />
       {banner && <Banner setBanner={setBanner} banner={banner} />}
-      <Hero />
+      <Hero darkMode={darkMode} />
       <HorizontalLine darkMode={darkMode} />
     </div>
   );

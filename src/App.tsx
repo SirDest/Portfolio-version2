@@ -10,7 +10,9 @@ function App() {
       //   backgroundColor: darkMode ? "black" : "white",
       //   color: darkMode ? "black" : "white",
       // }}
-      className='flex flex-col'
+      className={`flex flex-col ${darkMode ? "bg-[#050C0F]" : "bg-white"} ${
+        darkMode ? "text-[#ECE6D5]" : "text-black"
+      }`}
     >
       <Landing darkMode={darkMode} setDarkMode={setDarkMode} />
       <Main darkMode={darkMode} />
