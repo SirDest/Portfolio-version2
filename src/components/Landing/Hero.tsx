@@ -39,22 +39,23 @@ const Hero: React.FC<MyComponentsProps> = ({ darkMode }) => {
     >
       <div className='w-full h-fit m-auto font-platypi px-10 flex lg:flex-row text-[12px] flex-col justify-between'>
         <div className='lg:w-2/3 w-full flex'>
-          <div className='w-1/2 h-full p-2 md:p-6 text-center items-center flex gap-1'>
+          <div className='w-1/2 h-full p-2 md:p-10 text-center items-center flex gap-1'>
             <IoIosLaptop />
             <p>Front-End</p>
           </div>
-          <div className='w-1/2 h-full p-2 md:p-6 text-center items-center flex gap-1'>
+          <div className='w-1/2 h-full p-2 md:p-10 text-center items-center flex gap-1'>
             <CiLocationOn />
             <p>Nigeria</p>
           </div>
         </div>
         <div className='lg:w-1/3 w-full p-1 md:px-44 lg:p-1 py-2 h-fit'>
           <p>
-            Frontend Developer specializing in ReactJs. Thriving in a dynamic
-            team environment with a focus on creating seamless user experiences.
-            Passionate about building responsive and accessible web
-            applications, optimizing performance, and continuous learning to
-            enhance development skills.
+            Specializing in ReactJs. Started coding in 2021 and working
+            professionally since 2024. Thriving in a dynamic team environment
+            with a focus on creating seamless user experiences. Passionate about
+            building responsive and accessible web applications, optimizing
+            performance, and continuously learning to enhance development
+            skills.
           </p>
         </div>
       </div>
